@@ -17,6 +17,7 @@ const TodoList = props => {
     )
 }
 
-
+//item.id = the id of the specific item that was mapped
+//item.completed will be toggled and will run a ternary
 
 export default TodoList

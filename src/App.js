@@ -67,10 +67,12 @@ class App extends React.Component {
   }
 
   clickComplete = (id) => {
+    console.log(id);
     let Todolist = this.state.Todo.slice();
     Todolist.map ( item => {
       if(item.id === id) {
        return item.completed = !item.completed
+       //!true = false //!false = true
       } else {
         return item;
       }
@@ -88,7 +90,7 @@ class App extends React.Component {
       return null
     }})
     console.log(Todolist);
-    this.setState({Todo: Todolist})
+    this.setState({Todo: Todolist})//then run render()
   }
 
   
